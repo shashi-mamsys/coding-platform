@@ -1,0 +1,9 @@
+PORT=5000
+NODE_ENV=development
+MONGO_URL=mongodb://localhost:27017/coding-platform
+REDIS_URL=redis://localhost:6379
+JWT_SECRET=change-me-dev-secret
+EXECUTOR=process
+USE_DOCKER=0
+EXECUTOR_IMAGE=coding-platform-executor:local
+MAX_EXECUTION_MS=2000

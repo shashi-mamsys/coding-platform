@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "Segoe UI Mono", monospace;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+.dark body {
+  @apply bg-slate-950 text-slate-50;
+}
+
+code,
+pre,
+textarea {
+  font-family: var(--font-mono);
+}

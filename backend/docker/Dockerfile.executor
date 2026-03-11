@@ -1,0 +1,9 @@
+FROM node:22-slim
+
+RUN useradd -m runner
+USER runner
+WORKDIR /home/runner
+
+COPY runner.js /home/runner/runner.js
+
+ENTRYPOINT ["node", "runner.js"]
